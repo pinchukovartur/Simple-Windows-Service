@@ -10,16 +10,21 @@ The service outputs "Hello World" to the file, each time the system is started
   2. Install python 3.6+ (https://www.python.org/downloads/)      
 When installing, select the "add to PATH" and install pip.
 
-  3. Install win32 lib. At the command prompt, type pip install pypiwin32.    
-3.1 In the path variable there must be a path to .../.../Python3.*/Scripts and  ../.../Python3.* 
+  3. Install win32 lib. At the command prompt, type "pip install pypiwin32". In the path variable there must be a path to: 
+>.../.../Python3.*/Scripts 
   
-  4. Add to the PATH variable. It should have 4 ways.
- 1way - .../.../Python3.*/Scripts
- 2way - ../.../Python3.* 
- 3way - ../../Python3.*/Lib/site-packages/win32
- 4way - ../../Python3.*/Lib/site-packages/pypiwin32_system32
+>../.../Python3.* 
+  
+  4. Add to the PATH variable. It should have 4 ways:
+ >.../.../Python3.*/Scripts
  
-  5. Run python install.py. This script creates a service WindowsMonitor.
+ >../.../Python3.* 
+  
+ >../../Python3.*/Lib/site-packages/win32
+ 
+ >../../Python3.*/Lib/site-packages/pypiwin32_system32
+ 
+  5. Run "python install.py". This script creates a service WindowsMonitor.
   After the end of the service, the HelloWorld.txt file will be created in the folder ../../Python3.*/Lib/site-packages/win32
   
   
